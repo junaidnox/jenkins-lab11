@@ -29,7 +29,7 @@ def test_page_title(driver):
 def test_main_heading(driver):
     driver.get(BASE_URL)
     heading = driver.find_element(By.ID, "main-heading")
-    assert heading.text == "Wrong Heading For Gate Test"
+    assert heading.text == "Deployed by a CI/CD Pipeline"
 
 def test_student_name_is_set(driver):
     driver.get(BASE_URL)
